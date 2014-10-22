@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: fuse
+Description: File System in User Space (MacFUSE)
+Version: 2.7.3
+Libs: -L${libdir} -lfuse -pthread  -liconv
+Cflags: -I${includedir}/fuse -D__FreeBSD__=10 -D_FILE_OFFSET_BITS=64
