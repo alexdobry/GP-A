@@ -10,7 +10,9 @@ extension String {
             return "#\(self)"
         }
         set{
-            let stringWithoutHashtag = newValue.stringByReplacingOccurrencesOfString("#", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+            let stringWithoutHashtag = newValue.stringByReplacingOccurrencesOfString("#", withString: "",
+                                                                                     options: NSStringCompareOptions.LiteralSearch,
+                                                                                     range: nil)
             self = stringWithoutHashtag
         }
     }
