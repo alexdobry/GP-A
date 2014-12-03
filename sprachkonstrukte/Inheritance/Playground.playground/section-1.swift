@@ -3,48 +3,59 @@
 import UIKit
 
 
-class Fortbewegungsmittel {
+class Person {
     
-    var kmh = 0
+    var name = ""
     
-    var id = 1
-    
-    func fahren(){
-        kmh = 50
+    init(name: String) {
+        self.name = name
     }
 }
 
 
-class Flugzeug : Fortbewegungsmittel {
+class Student : Person {
     
-    override func fahren(){
-        kmh = 70
+    var uni = ""
+    
+    init(uni: String, name: String) {
+        super.init(name: name)
+        self.uni = uni
+    }
+    
+    func exmatrikulieren(){
+        self.uni = ""
     }
 }
 
 
-class Counter {
-    var count = 0
+class Arbeitnehmer : Person {
     
-    func increment() {
-        count++
+    var arbeitgeber = ""
+    
+    init(arbeitgeber: String, name: String) {
+        super.init(name: name)
+        self.arbeitgeber = arbeitgeber
     }
     
+    func kündigen(){
+        self.arbeitgeber = ""
+    }
 }
 
 
-let counter = Counter()
 
-counter.increment()
+class Werkstudent : Student, Arbeitnehmer{
+    
+   
+}
 
-let pkw = Fortbewegungsmittel()
-pkw.fahren()
 
-let airline = Flugzeug()
-airline.fahren()
 
-println(pkw.kmh)
 
-println(airline.kmh);
+    
+    
+    
+    
 
-println(airline.id)
+
+
