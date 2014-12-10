@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0A292A719F7E7F5001E0A94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A292A619F7E7F5001E0A94 /* AppDelegate.swift */; };
+		F0A292A919F7E7F5001E0A94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A292A819F7E7F5001E0A94 /* Images.xcassets */; };
+		F0A292AC19F7E7F5001E0A94 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A292AA19F7E7F5001E0A94 /* MainMenu.xib */; };
+		F0A292B819F7E7F5001E0A94 /* FirstCoreImageHoughTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A292B719F7E7F5001E0A94 /* FirstCoreImageHoughTestTests.swift */; };
+		F0A412E01A13B0930097CC6B /* HoughTransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A412DF1A13B0930097CC6B /* HoughTransformation.swift */; };
+		F0A412E21A13B1410097CC6B /* ArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A412E11A13B1410097CC6B /* ArrayTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0A292B219F7E7F5001E0A94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0A2929919F7E7F5001E0A94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0A292A019F7E7F5001E0A94;
+			remoteInfo = FirstCoreImageHoughTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0A292A119F7E7F5001E0A94 /* FirstCoreImageHoughTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstCoreImageHoughTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A292A519F7E7F5001E0A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A292A619F7E7F5001E0A94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0A292A819F7E7F5001E0A94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F0A292AB19F7E7F5001E0A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F0A292B119F7E7F5001E0A94 /* FirstCoreImageHoughTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstCoreImageHoughTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A292B619F7E7F5001E0A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A292B719F7E7F5001E0A94 /* FirstCoreImageHoughTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoreImageHoughTestTests.swift; sourceTree = "<group>"; };
+		F0A412DF1A13B0930097CC6B /* HoughTransformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoughTransformation.swift; sourceTree = "<group>"; };
+		F0A412E11A13B1410097CC6B /* ArrayTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0A2929E19F7E7F5001E0A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A292AE19F7E7F5001E0A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0A2929819F7E7F5001E0A94 = {
+			isa = PBXGroup;
+			children = (
+				F0A292A319F7E7F5001E0A94 /* FirstCoreImageHoughTest */,
+				F0A292B419F7E7F5001E0A94 /* FirstCoreImageHoughTestTests */,
+				F0A292A219F7E7F5001E0A94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0A292A219F7E7F5001E0A94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0A292A119F7E7F5001E0A94 /* FirstCoreImageHoughTest.app */,
+				F0A292B119F7E7F5001E0A94 /* FirstCoreImageHoughTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0A292A319F7E7F5001E0A94 /* FirstCoreImageHoughTest */ = {
+			isa = PBXGroup;
+			children = (
+				F0A292A619F7E7F5001E0A94 /* AppDelegate.swift */,
+				F0A292A819F7E7F5001E0A94 /* Images.xcassets */,
+				F0A292AA19F7E7F5001E0A94 /* MainMenu.xib */,
+				F0A292A419F7E7F5001E0A94 /* Supporting Files */,
+				F0A412DF1A13B0930097CC6B /* HoughTransformation.swift */,
+				F0A412E11A13B1410097CC6B /* ArrayTest.swift */,
+			);
+			path = FirstCoreImageHoughTest;
+			sourceTree = "<group>";
+		};
+		F0A292A419F7E7F5001E0A94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0A292A519F7E7F5001E0A94 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0A292B419F7E7F5001E0A94 /* FirstCoreImageHoughTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0A292B719F7E7F5001E0A94 /* FirstCoreImageHoughTestTests.swift */,
+				F0A292B519F7E7F5001E0A94 /* Supporting Files */,
+			);
+			path = FirstCoreImageHoughTestTests;
+			sourceTree = "<group>";
+		};
+		F0A292B519F7E7F5001E0A94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0A292B619F7E7F5001E0A94 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0A292A019F7E7F5001E0A94 /* FirstCoreImageHoughTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A292BB19F7E7F5001E0A94 /* Build configuration list for PBXNativeTarget "FirstCoreImageHoughTest" */;
+			buildPhases = (
+				F0A2929D19F7E7F5001E0A94 /* Sources */,
+				F0A2929E19F7E7F5001E0A94 /* Frameworks */,
+				F0A2929F19F7E7F5001E0A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirstCoreImageHoughTest;
+			productName = FirstCoreImageHoughTest;
+			productReference = F0A292A119F7E7F5001E0A94 /* FirstCoreImageHoughTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0A292B019F7E7F5001E0A94 /* FirstCoreImageHoughTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A292BE19F7E7F5001E0A94 /* Build configuration list for PBXNativeTarget "FirstCoreImageHoughTestTests" */;
+			buildPhases = (
+				F0A292AD19F7E7F5001E0A94 /* Sources */,
+				F0A292AE19F7E7F5001E0A94 /* Frameworks */,
+				F0A292AF19F7E7F5001E0A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0A292B319F7E7F5001E0A94 /* PBXTargetDependency */,
+			);
+			name = FirstCoreImageHoughTestTests;
+			productName = FirstCoreImageHoughTestTests;
+			productReference = F0A292B119F7E7F5001E0A94 /* FirstCoreImageHoughTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0A2929919F7E7F5001E0A94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Markus Müller";
+				TargetAttributes = {
+					F0A292A019F7E7F5001E0A94 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F0A292B019F7E7F5001E0A94 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = F0A292A019F7E7F5001E0A94;
+					};
+				};
+			};
+			buildConfigurationList = F0A2929C19F7E7F5001E0A94 /* Build configuration list for PBXProject "FirstCoreImageHoughTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0A2929819F7E7F5001E0A94;
+			productRefGroup = F0A292A219F7E7F5001E0A94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0A292A019F7E7F5001E0A94 /* FirstCoreImageHoughTest */,
+				F0A292B019F7E7F5001E0A94 /* FirstCoreImageHoughTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0A2929F19F7E7F5001E0A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A292A919F7E7F5001E0A94 /* Images.xcassets in Resources */,
+				F0A292AC19F7E7F5001E0A94 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A292AF19F7E7F5001E0A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0A2929D19F7E7F5001E0A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A412E01A13B0930097CC6B /* HoughTransformation.swift in Sources */,
+				F0A292A719F7E7F5001E0A94 /* AppDelegate.swift in Sources */,
+				F0A412E21A13B1410097CC6B /* ArrayTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A292AD19F7E7F5001E0A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A292B819F7E7F5001E0A94 /* FirstCoreImageHoughTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0A292B319F7E7F5001E0A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0A292A019F7E7F5001E0A94 /* FirstCoreImageHoughTest */;
+			targetProxy = F0A292B219F7E7F5001E0A94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0A292AA19F7E7F5001E0A94 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A292AB19F7E7F5001E0A94 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0A292B919F7E7F5001E0A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0A292BA19F7E7F5001E0A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F0A292BC19F7E7F5001E0A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FirstCoreImageHoughTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F0A292BD19F7E7F5001E0A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FirstCoreImageHoughTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F0A292BF19F7E7F5001E0A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FirstCoreImageHoughTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstCoreImageHoughTest.app/Contents/MacOS/FirstCoreImageHoughTest";
+			};
+			name = Debug;
+		};
+		F0A292C019F7E7F5001E0A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FirstCoreImageHoughTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstCoreImageHoughTest.app/Contents/MacOS/FirstCoreImageHoughTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0A2929C19F7E7F5001E0A94 /* Build configuration list for PBXProject "FirstCoreImageHoughTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A292B919F7E7F5001E0A94 /* Debug */,
+				F0A292BA19F7E7F5001E0A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A292BB19F7E7F5001E0A94 /* Build configuration list for PBXNativeTarget "FirstCoreImageHoughTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A292BC19F7E7F5001E0A94 /* Debug */,
+				F0A292BD19F7E7F5001E0A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A292BE19F7E7F5001E0A94 /* Build configuration list for PBXNativeTarget "FirstCoreImageHoughTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A292BF19F7E7F5001E0A94 /* Debug */,
+				F0A292C019F7E7F5001E0A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0A2929919F7E7F5001E0A94 /* Project object */;
+}

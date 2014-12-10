@@ -110,8 +110,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         for px in 1 ... height {
             for py in 1 ... width {
-                var y0 : Float = ((Float(px) - (f_width/2.0)) * 4.0 / f_width )// / 110) - 0.65  //* complexPlaneWidth + complexPlaneLeftEdgeCoord
-                var x0 : Float = ((Float(py) - (f_height/2.0)) * 4.0 / f_height) // / 110) + 0.35
+                var y0 : Float = ((Float(px) - (f_width/2.0)) * 4.0 / f_width  / 110) - 0.65  //* complexPlaneWidth + complexPlaneLeftEdgeCoord
+                var x0 : Float = ((Float(py) - (f_height/2.0)) * 4.0 / f_height / 110) + 0.35
                 
                 var x : Float = 0.0
                 var y : Float = 0.0
