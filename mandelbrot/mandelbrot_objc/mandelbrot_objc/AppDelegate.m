@@ -20,13 +20,13 @@
     
     //CGSize cgsize = CGSizeMake(3860, 3860);
     
-     NSImage *img = [[NSImage alloc] initWithSize: NSMakeSize(300, 300)];
+     NSImage *img = [[NSImage alloc] initWithSize: NSMakeSize(4000, 4000)];
      
      [img lockFocus];
      
      NSColor *black = [NSColor blackColor];
      [black setFill];
-     NSRectFill(NSMakeRect(0, 0, 300, 300));
+     NSRectFill(NSMakeRect(0, 0, 4000, 4000));
      [img unlockFocus];
      
      _view.image = img;
@@ -67,8 +67,6 @@
     
     unsigned long width = CGImageGetWidth(cgimg);
     unsigned long height = CGImageGetHeight(cgimg);
-    float f_height = (float) height;
-    float f_width = (float) width;
     
     //NSColorSpace *colorSpace = CFBridgingRelease(CGColorSpaceCreateDeviceRGB());
     CGColorSpaceRef rgbColorSpace = CGColorSpaceCreateDeviceRGB();
@@ -97,15 +95,23 @@
     
      
     for (int i = 0; i < max_iteration; i++) {
-//        NSColor *color = [NSColor colorWithCalibratedHue:(i/255) saturation:1 brightness:i/(i+8) alpha:255];
-        NSColor *color = [NSColor colorWithRed:0.5 green:0.2 blue:0.9 alpha:1.0];
+        CGFloat cg_i = (CGFloat) i;
+        CGFloat hue = cg_i / 256;
+        CGFloat sat = 1.0;
+        CGFloat bright = cg_i / (cg_i + 8);
+        
+        CGFloat alpha = 255;
+        
+        NSColor *color = [NSColor colorWithHue:hue saturation:sat brightness:bright alpha:alpha];
+    
+//        NSColor *color = [NSColor colorWithRed:0.5 green:0.2 blue:0.9 alpha:1.0];
         CGFloat *u_r = malloc(sizeof(CGFloat));
         CGFloat *u_g = malloc(sizeof(CGFloat));
         CGFloat *u_b = malloc(sizeof(CGFloat));
         CGFloat *u_a = malloc(sizeof(CGFloat));
         
         [color getRed:u_r green:u_g blue:u_b alpha:u_a];
-        NSLog(@"%f %f %f", color.redComponent, *u_g, *u_b);
+        NSLog(@"%d %f %f %f", i, *u_r, *u_g, *u_b);
         [colors addObject: color];
         
     }
@@ -117,8 +123,8 @@
      
     for (int px = 1;  px <= height; px++) {
          for (int py = 1;  py <= width; py++) {
-             float y0 = ((px - (f_width/2.0)) * 4.0 / f_width );// / 110) - 0.65  //* complexPlaneWidth + complexPlaneLeftEdgeCoord
-             float x0 = (py - (f_height/2.0)) * 4.0 / f_height; // / 110) + 0.35
+             float y0 = (((px - (width/2.0)) * 4.0) / width / 110) - 0.65;  //* complexPlaneWidth + complexPlaneLeftEdgeCoord
+             float x0 = (((py - (height/2.0)) * 4.0) / height / 110) + 0.35;
              
              float x = 0.0;
              float y = 0.0;
@@ -126,9 +132,9 @@
              int iteration = 0;
              
              
-             while ((x * x + y * y <= 4) && iteration < max_iteration) {
-                 float xtemp = x * x  - y * y + x0;
-                 y = 2 * x * y + y0;
+             while ((((x * x) + (y * y)) <= 4.0) && iteration < max_iteration) {
+                 float xtemp = (x * x) - (y * y) + x0;
+                 y = (2 * x * y) + y0;
                  x = xtemp;
                  iteration++;
              }
@@ -143,15 +149,16 @@
                  //                    r = colors[iteration].redComponent
                  //                    g = colors[iteration].greenComponent
                  //                    b = colors[iteration].blackComponent
-                 //NSLog(@"%f %f %f", u_r, u_g, u_b);
-                 rawData[bufferindex] =  (char) (*u_r * 255.0);
-                 rawData[bufferindex + 1] = (char) (*u_g * 255);
-                 rawData[bufferindex + 2] = (char) (*u_b * 255);
+//                 NSLog(@"%d %f %f %f", iteration, *u_r, *u_g, *u_b);
+                 rawData[bufferindex +1] =  (unsigned char) (*u_r * 255.0);
+                 rawData[bufferindex + 2] = (unsigned char) (*u_g * 255.0);
+                 rawData[bufferindex + 3] = (unsigned char) (*u_b * 255.0);
              
              } else {
-                 rawData[bufferindex] = 0;
-                 rawData[bufferindex + 1] = 0;
+//                 NSLog(@"%d", iteration);
+                 rawData[bufferindex +1] = 0;
                  rawData[bufferindex + 2] = 0;
+                 rawData[bufferindex + 3] = 0;
          }
          //println("Writing \(px) \(py) \(bufferindex)")
      
@@ -180,9 +187,8 @@
     
      cgimg = CGBitmapContextCreateImage (ctx);
     
-    NSBitmapImageRep *bitrep = [[NSBitmapImageRep alloc] initWithCGImage:cgimg];
-    NSImage *nsimg = [[NSImage alloc] init];
-    [nsimg addRepresentation:bitrep];
+    NSImage *nsimg = [[NSImage alloc] initWithCGImage:cgimg size:NSMakeSize(CGImageGetWidth(cgimg), CGImageGetHeight(cgimg))];
+
     
      
     _view.image = nsimg;

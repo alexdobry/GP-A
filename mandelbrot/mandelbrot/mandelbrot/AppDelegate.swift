@@ -131,7 +131,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 var r: CGFloat
                 var g: CGFloat
                 var b: CGFloat
-                
+
                 
                 if iteration < max_iteration {
                     
