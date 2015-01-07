@@ -11,7 +11,7 @@ struct entry {
 
 class ToDoService: NSObject {
     var entries:[entry] = []
-    
+
     func addEntry(title: String, description: String) {
         entries.append(entry(title: title, description: description))
     }
