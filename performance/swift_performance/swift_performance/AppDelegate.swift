@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        let times = 10
+        let times = 5
         mappedTwoDimensionalArray(times)
         dictArrays(times)
         floats(times)
