@@ -9,8 +9,8 @@ func swapTwoInts(inout a: Int, inout b: Int) {
     b = temporaryA
 }
 
-var someInt = 3
-var anotherInt = 107
+var someInt = 5
+var anotherInt = 6
 swapTwoInts(&someInt, &anotherInt)
 
 someInt

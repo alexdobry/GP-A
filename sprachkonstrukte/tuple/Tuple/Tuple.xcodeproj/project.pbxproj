@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CA9B4AC1A6FD0C000FB0FD0 /* SampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9B4AB1A6FD0C000FB0FD0 /* SampleClass.m */; };
 		3CECCF651A2F5667000F41AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CECCF641A2F5667000F41AB /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3CA9B4AB1A6FD0C000FB0FD0 /* SampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleClass.m; sourceTree = "<group>"; };
+		3CA9B4AD1A6FD14600FB0FD0 /* SampleClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SampleClass.h; path = ../SampleClass.h; sourceTree = "<group>"; };
 		3CECCF611A2F5667000F41AB /* Tuple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tuple; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CECCF641A2F5667000F41AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +60,9 @@
 		3CECCF631A2F5667000F41AB /* Tuple */ = {
 			isa = PBXGroup;
 			children = (
+				3CA9B4AD1A6FD14600FB0FD0 /* SampleClass.h */,
 				3CECCF641A2F5667000F41AB /* main.m */,
+				3CA9B4AB1A6FD0C000FB0FD0 /* SampleClass.m */,
 			);
 			path = Tuple;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA9B4AC1A6FD0C000FB0FD0 /* SampleClass.m in Sources */,
 				3CECCF651A2F5667000F41AB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +238,7 @@
 				3CECCF6A1A2F5667000F41AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
