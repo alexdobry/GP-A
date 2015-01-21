@@ -7,42 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		390247C41A25D670006D89DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390247C31A25D670006D89DA /* AppDelegate.swift */; };
-		390247C61A25D670006D89DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390247C51A25D670006D89DA /* Images.xcassets */; };
-		390247C91A25D670006D89DA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390247C71A25D670006D89DA /* MainMenu.xib */; };
-		390247D51A25D670006D89DA /* mandelbrotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390247D41A25D670006D89DA /* mandelbrotTests.swift */; };
+		3938A5241A6FD75200D7A074 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3938A5231A6FD75200D7A074 /* AppDelegate.m */; };
+		3938A5261A6FD75200D7A074 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3938A5251A6FD75200D7A074 /* main.m */; };
+		3938A5281A6FD75200D7A074 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3938A5271A6FD75200D7A074 /* Images.xcassets */; };
+		3938A52B1A6FD75300D7A074 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3938A5291A6FD75300D7A074 /* MainMenu.xib */; };
+		3938A5371A6FD75300D7A074 /* objc_performanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3938A5361A6FD75300D7A074 /* objc_performanceTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		390247CF1A25D670006D89DA /* PBXContainerItemProxy */ = {
+		3938A5311A6FD75300D7A074 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 390247B61A25D670006D89DA /* Project object */;
+			containerPortal = 3938A5151A6FD75200D7A074 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 390247BD1A25D670006D89DA;
-			remoteInfo = mandelbrot;
+			remoteGlobalIDString = 3938A51C1A6FD75200D7A074;
+			remoteInfo = objc_performance;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		390247BE1A25D670006D89DA /* mandelbrot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mandelbrot.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		390247C21A25D670006D89DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		390247C31A25D670006D89DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		390247C51A25D670006D89DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		390247C81A25D670006D89DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		390247CE1A25D670006D89DA /* mandelbrotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mandelbrotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		390247D31A25D670006D89DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		390247D41A25D670006D89DA /* mandelbrotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mandelbrotTests.swift; sourceTree = "<group>"; };
+		3938A51D1A6FD75200D7A074 /* objc_performance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objc_performance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3938A5211A6FD75200D7A074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3938A5221A6FD75200D7A074 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3938A5231A6FD75200D7A074 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3938A5251A6FD75200D7A074 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3938A5271A6FD75200D7A074 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3938A52A1A6FD75300D7A074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3938A5301A6FD75300D7A074 /* objc_performanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objc_performanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3938A5351A6FD75300D7A074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3938A5361A6FD75300D7A074 /* objc_performanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_performanceTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		390247BB1A25D670006D89DA /* Frameworks */ = {
+		3938A51A1A6FD75200D7A074 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		390247CB1A25D670006D89DA /* Frameworks */ = {
+		3938A52D1A6FD75300D7A074 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,56 +55,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		390247B51A25D670006D89DA = {
+		3938A5141A6FD75200D7A074 = {
 			isa = PBXGroup;
 			children = (
-				390247C01A25D670006D89DA /* mandelbrot */,
-				390247D11A25D670006D89DA /* mandelbrotTests */,
-				390247BF1A25D670006D89DA /* Products */,
+				3938A51F1A6FD75200D7A074 /* objc_performance */,
+				3938A5331A6FD75300D7A074 /* objc_performanceTests */,
+				3938A51E1A6FD75200D7A074 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		390247BF1A25D670006D89DA /* Products */ = {
+		3938A51E1A6FD75200D7A074 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				390247BE1A25D670006D89DA /* mandelbrot.app */,
-				390247CE1A25D670006D89DA /* mandelbrotTests.xctest */,
+				3938A51D1A6FD75200D7A074 /* objc_performance.app */,
+				3938A5301A6FD75300D7A074 /* objc_performanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		390247C01A25D670006D89DA /* mandelbrot */ = {
+		3938A51F1A6FD75200D7A074 /* objc_performance */ = {
 			isa = PBXGroup;
 			children = (
-				390247C31A25D670006D89DA /* AppDelegate.swift */,
-				390247C51A25D670006D89DA /* Images.xcassets */,
-				390247C71A25D670006D89DA /* MainMenu.xib */,
-				390247C11A25D670006D89DA /* Supporting Files */,
+				3938A5221A6FD75200D7A074 /* AppDelegate.h */,
+				3938A5231A6FD75200D7A074 /* AppDelegate.m */,
+				3938A5271A6FD75200D7A074 /* Images.xcassets */,
+				3938A5291A6FD75300D7A074 /* MainMenu.xib */,
+				3938A5201A6FD75200D7A074 /* Supporting Files */,
 			);
-			path = mandelbrot;
+			path = objc_performance;
 			sourceTree = "<group>";
 		};
-		390247C11A25D670006D89DA /* Supporting Files */ = {
+		3938A5201A6FD75200D7A074 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				390247C21A25D670006D89DA /* Info.plist */,
+				3938A5211A6FD75200D7A074 /* Info.plist */,
+				3938A5251A6FD75200D7A074 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		390247D11A25D670006D89DA /* mandelbrotTests */ = {
+		3938A5331A6FD75300D7A074 /* objc_performanceTests */ = {
 			isa = PBXGroup;
 			children = (
-				390247D41A25D670006D89DA /* mandelbrotTests.swift */,
-				390247D21A25D670006D89DA /* Supporting Files */,
+				3938A5361A6FD75300D7A074 /* objc_performanceTests.m */,
+				3938A5341A6FD75300D7A074 /* Supporting Files */,
 			);
-			path = mandelbrotTests;
+			path = objc_performanceTests;
 			sourceTree = "<group>";
 		};
-		390247D21A25D670006D89DA /* Supporting Files */ = {
+		3938A5341A6FD75300D7A074 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				390247D31A25D670006D89DA /* Info.plist */,
+				3938A5351A6FD75300D7A074 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,60 +114,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		390247BD1A25D670006D89DA /* mandelbrot */ = {
+		3938A51C1A6FD75200D7A074 /* objc_performance */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 390247D81A25D670006D89DA /* Build configuration list for PBXNativeTarget "mandelbrot" */;
+			buildConfigurationList = 3938A53A1A6FD75300D7A074 /* Build configuration list for PBXNativeTarget "objc_performance" */;
 			buildPhases = (
-				390247BA1A25D670006D89DA /* Sources */,
-				390247BB1A25D670006D89DA /* Frameworks */,
-				390247BC1A25D670006D89DA /* Resources */,
+				3938A5191A6FD75200D7A074 /* Sources */,
+				3938A51A1A6FD75200D7A074 /* Frameworks */,
+				3938A51B1A6FD75200D7A074 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = mandelbrot;
-			productName = mandelbrot;
-			productReference = 390247BE1A25D670006D89DA /* mandelbrot.app */;
+			name = objc_performance;
+			productName = objc_performance;
+			productReference = 3938A51D1A6FD75200D7A074 /* objc_performance.app */;
 			productType = "com.apple.product-type.application";
 		};
-		390247CD1A25D670006D89DA /* mandelbrotTests */ = {
+		3938A52F1A6FD75300D7A074 /* objc_performanceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 390247DB1A25D670006D89DA /* Build configuration list for PBXNativeTarget "mandelbrotTests" */;
+			buildConfigurationList = 3938A53D1A6FD75300D7A074 /* Build configuration list for PBXNativeTarget "objc_performanceTests" */;
 			buildPhases = (
-				390247CA1A25D670006D89DA /* Sources */,
-				390247CB1A25D670006D89DA /* Frameworks */,
-				390247CC1A25D670006D89DA /* Resources */,
+				3938A52C1A6FD75300D7A074 /* Sources */,
+				3938A52D1A6FD75300D7A074 /* Frameworks */,
+				3938A52E1A6FD75300D7A074 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				390247D01A25D670006D89DA /* PBXTargetDependency */,
+				3938A5321A6FD75300D7A074 /* PBXTargetDependency */,
 			);
-			name = mandelbrotTests;
-			productName = mandelbrotTests;
-			productReference = 390247CE1A25D670006D89DA /* mandelbrotTests.xctest */;
+			name = objc_performanceTests;
+			productName = objc_performanceTests;
+			productReference = 3938A5301A6FD75300D7A074 /* objc_performanceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		390247B61A25D670006D89DA /* Project object */ = {
+		3938A5151A6FD75200D7A074 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Patrick Englert";
 				TargetAttributes = {
-					390247BD1A25D670006D89DA = {
+					3938A51C1A6FD75200D7A074 = {
 						CreatedOnToolsVersion = 6.1;
 					};
-					390247CD1A25D670006D89DA = {
+					3938A52F1A6FD75300D7A074 = {
 						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 390247BD1A25D670006D89DA;
+						TestTargetID = 3938A51C1A6FD75200D7A074;
 					};
 				};
 			};
-			buildConfigurationList = 390247B91A25D670006D89DA /* Build configuration list for PBXProject "mandelbrot" */;
+			buildConfigurationList = 3938A5181A6FD75200D7A074 /* Build configuration list for PBXProject "objc_performance" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -170,28 +175,28 @@
 				en,
 				Base,
 			);
-			mainGroup = 390247B51A25D670006D89DA;
-			productRefGroup = 390247BF1A25D670006D89DA /* Products */;
+			mainGroup = 3938A5141A6FD75200D7A074;
+			productRefGroup = 3938A51E1A6FD75200D7A074 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				390247BD1A25D670006D89DA /* mandelbrot */,
-				390247CD1A25D670006D89DA /* mandelbrotTests */,
+				3938A51C1A6FD75200D7A074 /* objc_performance */,
+				3938A52F1A6FD75300D7A074 /* objc_performanceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		390247BC1A25D670006D89DA /* Resources */ = {
+		3938A51B1A6FD75200D7A074 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				390247C61A25D670006D89DA /* Images.xcassets in Resources */,
-				390247C91A25D670006D89DA /* MainMenu.xib in Resources */,
+				3938A5281A6FD75200D7A074 /* Images.xcassets in Resources */,
+				3938A52B1A6FD75300D7A074 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		390247CC1A25D670006D89DA /* Resources */ = {
+		3938A52E1A6FD75300D7A074 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,37 +206,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		390247BA1A25D670006D89DA /* Sources */ = {
+		3938A5191A6FD75200D7A074 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				390247C41A25D670006D89DA /* AppDelegate.swift in Sources */,
+				3938A5261A6FD75200D7A074 /* main.m in Sources */,
+				3938A5241A6FD75200D7A074 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		390247CA1A25D670006D89DA /* Sources */ = {
+		3938A52C1A6FD75300D7A074 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				390247D51A25D670006D89DA /* mandelbrotTests.swift in Sources */,
+				3938A5371A6FD75300D7A074 /* objc_performanceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		390247D01A25D670006D89DA /* PBXTargetDependency */ = {
+		3938A5321A6FD75300D7A074 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 390247BD1A25D670006D89DA /* mandelbrot */;
-			targetProxy = 390247CF1A25D670006D89DA /* PBXContainerItemProxy */;
+			target = 3938A51C1A6FD75200D7A074 /* objc_performance */;
+			targetProxy = 3938A5311A6FD75300D7A074 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		390247C71A25D670006D89DA /* MainMenu.xib */ = {
+		3938A5291A6FD75300D7A074 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				390247C81A25D670006D89DA /* Base */,
+				3938A52A1A6FD75300D7A074 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -239,7 +245,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		390247D61A25D670006D89DA /* Debug */ = {
+		3938A5381A6FD75300D7A074 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -277,11 +283,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		390247D71A25D670006D89DA /* Release */ = {
+		3938A5391A6FD75300D7A074 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -316,29 +321,29 @@
 			};
 			name = Release;
 		};
-		390247D91A25D670006D89DA /* Debug */ = {
+		3938A53B1A6FD75300D7A074 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = mandelbrot/Info.plist;
+				INFOPLIST_FILE = objc_performance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		390247DA1A25D670006D89DA /* Release */ = {
+		3938A53C1A6FD75300D7A074 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = mandelbrot/Info.plist;
+				INFOPLIST_FILE = objc_performance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		390247DC1A25D670006D89DA /* Debug */ = {
+		3938A53E1A6FD75300D7A074 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -351,14 +356,14 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = mandelbrotTests/Info.plist;
+				INFOPLIST_FILE = objc_performanceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mandelbrot.app/Contents/MacOS/mandelbrot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/objc_performance.app/Contents/MacOS/objc_performance";
 			};
 			name = Debug;
 		};
-		390247DD1A25D670006D89DA /* Release */ = {
+		3938A53F1A6FD75300D7A074 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -367,44 +372,42 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = mandelbrotTests/Info.plist;
+				INFOPLIST_FILE = objc_performanceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mandelbrot.app/Contents/MacOS/mandelbrot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/objc_performance.app/Contents/MacOS/objc_performance";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		390247B91A25D670006D89DA /* Build configuration list for PBXProject "mandelbrot" */ = {
+		3938A5181A6FD75200D7A074 /* Build configuration list for PBXProject "objc_performance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				390247D61A25D670006D89DA /* Debug */,
-				390247D71A25D670006D89DA /* Release */,
+				3938A5381A6FD75300D7A074 /* Debug */,
+				3938A5391A6FD75300D7A074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		390247D81A25D670006D89DA /* Build configuration list for PBXNativeTarget "mandelbrot" */ = {
+		3938A53A1A6FD75300D7A074 /* Build configuration list for PBXNativeTarget "objc_performance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				390247D91A25D670006D89DA /* Debug */,
-				390247DA1A25D670006D89DA /* Release */,
+				3938A53B1A6FD75300D7A074 /* Debug */,
+				3938A53C1A6FD75300D7A074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		390247DB1A25D670006D89DA /* Build configuration list for PBXNativeTarget "mandelbrotTests" */ = {
+		3938A53D1A6FD75300D7A074 /* Build configuration list for PBXNativeTarget "objc_performanceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				390247DC1A25D670006D89DA /* Debug */,
-				390247DD1A25D670006D89DA /* Release */,
+				3938A53E1A6FD75300D7A074 /* Debug */,
+				3938A53F1A6FD75300D7A074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 390247B61A25D670006D89DA /* Project object */;
+	rootObject = 3938A5151A6FD75200D7A074 /* Project object */;
 }

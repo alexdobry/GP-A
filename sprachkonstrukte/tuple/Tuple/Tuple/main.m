@@ -7,11 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SampleClass.h"
+#import "SampleClass.m"
+
+
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    
+    
+   NSArray *nichtaenderbar = @[@"Hello World", @ 4];
+   SampleClass *sampleclass = [[SampleClass alloc]init];
+   NSMutableArray* result = [sampleclass getMultipleValues];
+  
+   NSString *boolVar = result[1];
+    
+  [result replaceObjectAtIndex:0 withObject: @"Bye"];
+
+    
     return 0;
 }
+
+
+
+
