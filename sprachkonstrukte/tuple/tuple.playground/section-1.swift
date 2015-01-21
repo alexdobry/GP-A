@@ -2,20 +2,38 @@
 
 import UIKit
 
+
 //Tuple initialisieren
-var tipAndTotal:(Double, String) = (4.00, "randomText")
+var aenderbar:(Double, String) = (4.00, "Hello World")
+
+//"Named Tuple" initialisieren
+let nichtAenderbar = (temp1:4.00, temp2:"Hello World")
+
+//Named tupel auslesen
+nichtAenderbar.temp1
+nichtAenderbar.temp2
 
 
-//Zugriff auf das erste Element und in einer neuen Variable speichern
-var element1 = tipAndTotal.0
+//Funktion die ein Tupel zurückgibt
+func getMultipleValues() -> (name: String, isEnabled: Bool, number: Double)
+{
+    let _name = "Willkommen"
+    let _number = 123456789.3
+    let _isEnabled = true
+    
+    return (_name, _isEnabled,  _number)
+}
 
+//Funktionsaufruf
+var result = getMultipleValues()
+
+//Named und normaler Zugriff auf die Tupelelemente
+let boolVar = result.isEnabled
+let doubleVar = result.1
 
 //Manipulation eines Tuple-Elements
-tipAndTotal.1 = "newText"
+//Wert in dem Tupel überschreiben
+result.name = "Bye"
 
-
-//"Named Tuple" initialisieren und Auslesen
-let tipAndTotalNamed = (tipAmt:4.00, total:25.19)
-
-tipAndTotalNamed.tipAmt
-tipAndTotalNamed.total
+//Zugriff auf das erste Element
+result.0

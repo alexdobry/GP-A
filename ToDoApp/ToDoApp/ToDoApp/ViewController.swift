@@ -53,12 +53,19 @@ class ViewController: UITableViewController, UITableViewDelegate, UITableViewDat
             textfield.placeholder = "Beschreibung eingeben"
             descriptionField = textfield
         }
-        alert.addAction(UIAlertAction(title: "Hinzufügen", style: UIAlertActionStyle.Default, handler: { (action: UIAlertAction!) in
+        /*alert.addAction(UIAlertAction(title: "Hinzufügen", style: UIAlertActionStyle.Default, handler: { (action: UIAlertAction!) in
             toDoService.addEntry(titleField.text, description: descriptionField.text)
             self.table.reloadData()
-        }))
+        }))*/
+        
+        alert.addAction(UIAlertAction(title: "Hinzufügen", style: UIAlertActionStyle.Default, handler: doStuff));
         
         self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func doStuff(action: UIAlertAction!) {
+        toDoService.addEntry("title", description: "description")
+        self.table.reloadData()
     }
 }
 

@@ -4,4 +4,11 @@ import Cocoa
 
 var a = 1
 print(a)
-a = "hello"
+//a = "hello"
+
+var hello = "hello"
+hello += " world!"
+print(hello)
+
+let helloAgain = "hello"
+helloAgain + = " world!" // doesnt work
