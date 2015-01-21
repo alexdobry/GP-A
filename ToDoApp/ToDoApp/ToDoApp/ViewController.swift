@@ -58,12 +58,12 @@ class ViewController: UITableViewController, UITableViewDelegate, UITableViewDat
             self.table.reloadData()
         }))*/
         
-        alert.addAction(UIAlertAction(title: "Hinzufügen", style: UIAlertActionStyle.Default, handler: doStuff));
+        alert.addAction(UIAlertAction(title: "Hinzufügen", style: UIAlertActionStyle.Default, handler: addEntry));
         
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
-    func doStuff(action: UIAlertAction!) {
+    func addEntry(action: UIAlertAction!) {
         toDoService.addEntry("title", description: "description")
         self.table.reloadData()
     }
