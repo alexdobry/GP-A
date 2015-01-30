@@ -14,11 +14,14 @@
 
 int main(int argc, const char * argv[]) {
     
-    
-   NSArray *nichtaenderbar = @[@"Hello World", @ 4];
+   // generisches array als tuple
+   NSArray *tupel = @[@"Hello World", @ 4];
    SampleClass *sampleclass = [[SampleClass alloc]init];
-   NSMutableArray* result = [sampleclass getMultipleValues];
+   NSArray* result = [sampleclass getMultipleValues];
   
+   // ansprechen
+   result[0]
+   result[1]
    NSString *boolVar = result[1];
     
   [result replaceObjectAtIndex:0 withObject: @"Bye"];

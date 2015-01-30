@@ -2,10 +2,12 @@
 
 import UIKit
 
+// swift struct
 struct structBruch {
     var nenner = 0, zähler = 0
 }
 
+// swift klasse
 class classBruch {
     var nenner = 0, zähler = 0
     
@@ -20,6 +22,7 @@ class classBruch {
     }
 }
 
+//verwendung
 var a = structBruch(nenner: 3, zähler: 2)
 var b = classBruch(nenner: 3, zähler: 2)
 var c = classBruch(zähler: 3)

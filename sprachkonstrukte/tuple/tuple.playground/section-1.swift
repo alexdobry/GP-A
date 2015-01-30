@@ -3,16 +3,17 @@
 import UIKit
 
 
-//Tuple initialisieren
+// tuple initialisieren
 var aenderbar:(Double, String) = (4.00, "Hello World")
+// ansprechen
+aenderbar.0
+aenderbar.1
 
-//"Named Tuple" initialisieren
-let nichtAenderbar = (temp1:4.00, temp2:"Hello World")
-
-//Named tupel auslesen
-nichtAenderbar.temp1
-nichtAenderbar.temp2
-
+// named tuple initialisieren
+let nichtAenderbar = (zahl:4.00, wort:"Hello World")
+// ansprechen
+nichtAenderbar.zahl
+nichtAenderbar.wort
 
 //Funktion die ein Tupel zurückgibt
 func getMultipleValues() -> (name: String, isEnabled: Bool, number: Double)
@@ -24,8 +25,10 @@ func getMultipleValues() -> (name: String, isEnabled: Bool, number: Double)
     return (_name, _isEnabled,  _number)
 }
 
-//Funktionsaufruf
 var result = getMultipleValues()
+//Funktionsaufruf
+result.name
+result.number
 
 //Named und normaler Zugriff auf die Tupelelemente
 let boolVar = result.isEnabled

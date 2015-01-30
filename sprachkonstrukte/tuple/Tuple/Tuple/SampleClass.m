@@ -11,7 +11,8 @@
 
 @implementation SampleClass
 
-- (NSMutableArray*)getMultipleValues{
+// function mit array rückgabewert
+- (NSArray*)getMultipleValues{
  
     NSMutableArray *aenderbar =[NSMutableArray array];
     [aenderbar addObject:@"Willkommen"];

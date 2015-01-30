@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  helloworld-objc
-//
-//  Created by Alex on 07.01.15.
-//  Copyright (c) 2015 Alex. All rights reserved.
-//
-
 #import "ViewController.h"
 
 @interface ViewController ()

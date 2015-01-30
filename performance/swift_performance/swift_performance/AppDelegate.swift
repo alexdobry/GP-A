@@ -111,11 +111,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let n: Int = 10000
         var x = [Int](count: n, repeatedValue: 1)
         var start = NSDate()
-        for i in 0...n-1 {
-            for j in 0...n-1 {
-                x[i] = x[j]++
-            }
-        }
+for i in 0...n-1 {
+    for j in 0...n-1 {
+        x[i] = x[j]++
+    }
+}
         
         var end = NSDate()
         var interval: Double = end.timeIntervalSinceDate(start)

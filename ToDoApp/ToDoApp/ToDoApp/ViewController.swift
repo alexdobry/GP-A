@@ -28,7 +28,7 @@ class ViewController: UITableViewController, UITableViewDelegate, UITableViewDat
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "nil")
-        cell.textLabel.text = toDoService.entries[indexPath.row].title
+        cell.textLabel?.text = toDoService.entries[indexPath.row].title
         cell.detailTextLabel?.text = toDoService.entries[indexPath.row].description
         return cell
     }
@@ -53,19 +53,19 @@ class ViewController: UITableViewController, UITableViewDelegate, UITableViewDat
             textfield.placeholder = "Beschreibung eingeben"
             descriptionField = textfield
         }
-        /*alert.addAction(UIAlertAction(title: "Hinzufügen", style: UIAlertActionStyle.Default, handler: { (action: UIAlertAction!) in
+        alert.addAction(UIAlertAction(title: "Hinzufügen", style: UIAlertActionStyle.Default, handler: { (action: UIAlertAction!) in
             toDoService.addEntry(titleField.text, description: descriptionField.text)
             self.table.reloadData()
-        }))*/
+        }))
         
-        alert.addAction(UIAlertAction(title: "Hinzufügen", style: UIAlertActionStyle.Default, handler: addEntry));
+        /*alert.addAction(UIAlertAction(title: "Hinzufügen", style: UIAlertActionStyle.Default, handler: addEntry)); */
         
         self.presentViewController(alert, animated: true, completion: nil)
     }
-    
+    /*
     func addEntry(action: UIAlertAction!) {
         toDoService.addEntry("title", description: "description")
         self.table.reloadData()
-    }
+    }*/
 }
 

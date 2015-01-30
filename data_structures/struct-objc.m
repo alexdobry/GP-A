@@ -8,32 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-struct Bruch{
+struct Bruch{ // obj-c struct
     int zähler;
     int nenner;
 };
 
 @interface BruchService : NSObject
-
-- (void) multiply: (struct Bruch) bruch;
-
+    - (void) multiply: (struct Bruch) bruch; // methoden bekanntmachen
 @end
 
 @implementation BruchService
-
-- (struct Bruch) multiply: (struct Bruch) this with: (struct Bruch) that {
+    - (struct Bruch) multiply: (struct Bruch) this with: (struct Bruch) that {
     struct Bruch ergebnis;
     ergebnis.zähler = this.zähler * that.zähler;
     ergebnis.nenner = this.nenner * that.nenner;
     return ergebnis;
-}
-
+} // methoden implementierung
 @end
 
 int main() {
-    struct Bruch a;
-    struct Bruch b;
-    struct Bruch ergebnis;
+    struct Bruch a, b, ergebnis;
     
     a.zähler = 3;
     a.nenner = 5;
