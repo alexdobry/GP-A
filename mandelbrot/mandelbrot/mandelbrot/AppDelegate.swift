@@ -24,11 +24,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         var cgsize = CGSizeMake(3860, 3860)
         
         
-        var img = NSImage(size: NSMakeSize(4000, 4000))
+        var img = NSImage(size: NSMakeSize(16000, 16000))
         img.lockFocus()
         var black = NSColor.blackColor()
         black.setFill()
-        NSRectFill(NSMakeRect(0, 0, 4000, 4000))
+        NSRectFill(NSMakeRect(0, 0, 16000, 16000))
         img.unlockFocus()
         
         imgview.image = img
@@ -104,7 +104,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             colors.append(NSColor(hue: hue, saturation: sat, brightness: bright, alpha: alpha))
         }
         
-        
+        var n = 0
         var start = NSDate()
         //draw stuff
 
@@ -125,7 +125,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     x = xtemp
                     iteration++
                 }
-                
+                n += iteration;
                 
                 
                 var r: CGFloat
@@ -166,6 +166,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         var end = NSDate()
          println(end.timeIntervalSinceDate(start))
+        println(n)
         //write new img
 //        var newimg : CGImage = CGBitmapContextCreateImage(imgref)
 //        var bitrep = NSBitmapImageRep(CGImage: newimg)

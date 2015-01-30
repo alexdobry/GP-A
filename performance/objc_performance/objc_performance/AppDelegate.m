@@ -17,12 +17,12 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     int times = 5;
-    [self mappedTwoDimensionalArray:times];
+//    [self mappedTwoDimensionalArray:times];
 //        dictArrays(times)
     [self floats:times];
-    [self arrayAccessing:times];
-    [self twoDimArray:times];
-//        
+//    [self arrayAccessing:times];
+//    [self twoDimArray:times];
+//
 //        
 //        
 //        

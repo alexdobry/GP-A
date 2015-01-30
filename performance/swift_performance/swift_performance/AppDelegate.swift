@@ -16,8 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         let times = 5
-        mappedTwoDimensionalArray(times)
-        dictArrays(times)
+//        mappedTwoDimensionalArray(times)
+//        dictArrays(times)
         floats(times)
         arrayAccessing(times)
         twoDimArray(times)

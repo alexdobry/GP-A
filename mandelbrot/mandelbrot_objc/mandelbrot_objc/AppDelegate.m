@@ -20,13 +20,13 @@
     
     //CGSize cgsize = CGSizeMake(3860, 3860);
     
-     NSImage *img = [[NSImage alloc] initWithSize: NSMakeSize(4000, 4000)];
+     NSImage *img = [[NSImage alloc] initWithSize: NSMakeSize(16000, 16000)];
      
      [img lockFocus];
      
      NSColor *black = [NSColor blackColor];
      [black setFill];
-     NSRectFill(NSMakeRect(0, 0, 4000, 4000));
+     NSRectFill(NSMakeRect(0, 0, 16000, 16000));
      [img unlockFocus];
      
      _view.image = img;
