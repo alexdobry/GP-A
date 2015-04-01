@@ -6,7 +6,7 @@
     return [NSString stringWithFormat:@"#%@", self];
   }
 
-  - (void) hashtag(NSString* newValue) {
+  - (void) hashtag:(NSString* newValue) {
     NSString* stringWithoutHashtag = [newValue stringByReplacingOccurencesOfString:@"#"
                                                                         withString:@""
                                                                            options:NSStringCompareOptions.LiteralSearch
